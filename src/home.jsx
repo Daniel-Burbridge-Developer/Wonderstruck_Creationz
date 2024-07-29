@@ -11,7 +11,6 @@ function Home() {
         {categories.map((category) => (
           <CategoryCard key={category.id} name={category.name} />
         ))}
-        <CategoryCard />
       </section>
     </>
   );

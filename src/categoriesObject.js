@@ -3,6 +3,7 @@ let categories = [
   {
     id: 1,
     name: 'Cups',
+    url: '/categories/cups',
     logo_url: './assets/categories/Cups.png',
     description: 'Variety of cups in all shapes and sizes',
     subCategories: [
@@ -112,6 +113,7 @@ let categories = [
   {
     id: 2,
     name: 'Placeholder',
+    url: '/categories/placeholder',
     logo_url: './assets/placeholder.png',
     description: 'Variety of cups in all shapes and sizes',
     subCategories: [
@@ -222,6 +224,7 @@ let categories = [
     id: 3,
     name: 'Placeholder',
     logo_url: './assets/placeholder.png',
+    url: '/categories/cups',
     description: 'Variety of cups in all shapes and sizes',
     subCategories: [
       {

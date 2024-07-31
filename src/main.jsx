@@ -15,7 +15,7 @@ createRoot(document.getElementById('root')).render(
         <NavBar />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/Wonderstruck_Creationz/cups" element={<Cups />} />
+          <Route path="/cups" element={<Cups />} />
         </Routes>
       </div>
     </BrowserRouter>

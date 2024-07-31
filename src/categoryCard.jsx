@@ -7,7 +7,7 @@ const CategoryCard = (props) => {
       <div className="relative">
         <Link to={`/${props.category.name}`} prefetch={false}>
           <img
-            src={`./assets/categories/${props.category.name}.png`}
+            src={props.category.logo_url}
             alt={props.category.name}
             width={500}
             height={400}

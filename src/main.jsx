@@ -14,7 +14,7 @@ createRoot(document.getElementById('root')).render(
       <div className="flex min-h-screen flex-grow flex-col bg-backdrop-paintsplash bg-cover bg-center bg-no-repeat">
         <NavBar />
         <Routes>
-          <Route path="/Wonderstruck_Creationz" element={<Home />} />
+          <Route path="/" element={<Home />} />
           <Route path="/Wonderstruck_Creationz/cups" element={<Cups />} />
         </Routes>
       </div>

@@ -5,12 +5,9 @@ const CategoryCard = (props) => {
   return (
     <div className="bg-background mx-2 w-full max-w-sm overflow-hidden rounded-lg bg-gray-400 bg-opacity-75 shadow-lg">
       <div className="relative">
-        <Link
-          to={`/Wonderstruck_Creationz/${props.category.name}`}
-          prefetch={false}
-        >
+        <Link to={`/${props.category.name}`} prefetch={false}>
           <img
-            src={`/src/assets/categories/${props.category.name}.png`}
+            src={`./assets/categories/${props.category.name}.png`}
             alt={props.category.name}
             width={500}
             height={400}
@@ -22,7 +19,7 @@ const CategoryCard = (props) => {
         </Link>
       </div>
       <div className="p-6">
-        <Link to={`/Wonderstruck_Creationz/cups`} prefetch={false}>
+        <Link to={`/cups`} prefetch={false}>
           <h3 className="mb-2 text-xl font-bold">{props.category.name}</h3>
         </Link>
         <p className="text-muted-foreground mb-4">

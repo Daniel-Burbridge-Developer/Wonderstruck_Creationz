@@ -30,7 +30,7 @@ jobs:
           server: ftp://wonderstruckcreationz.shop # Change this to your FTP server
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          local-dir: build/
+          local-dir: dist/
           server-dir: /public_html/ # Change this if your directory is different
 
       - name: Create .htaccess for React Router

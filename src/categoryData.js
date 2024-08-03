@@ -11,8 +11,8 @@ const categoriesData = {
           id: 1,
           name: 'Stanleys',
           url: '/categories/cups/stanleys',
-          image_url: '/assets/placeholder.png',
-          description: 'placeholder, placeholder, placeholder',
+          image_url: '/assets/subcategories/Adult Stanleys.avif',
+          description: 'Stanley Dupes in Various Colours',
           products: [
             {
               id: 1,
@@ -36,7 +36,7 @@ const categoriesData = {
           id: 2,
           name: 'Libbeys',
           url: '/categories/cups/libbeys',
-          image_url: '/assets/placeholder.png',
+          image_url: '/assets/subcategories/libbeys.jfif',
           description: 'placeholder, placeholder, placeholder',
           products: [
             {
@@ -61,7 +61,7 @@ const categoriesData = {
           id: 3,
           name: 'Cold Cups',
           url: '/categories/cups/coldcups',
-          image_url: '/assets/placeholder.png',
+          image_url: '/assets/subcategories/24oz Cold Cups.jpg',
           description: 'placeholder, placeholder, placeholder',
           products: [
             {
@@ -86,7 +86,7 @@ const categoriesData = {
           id: 4,
           name: 'Tumblers',
           url: '/categories/cups/tumblers',
-          image_url: '/assets/placeholder.png',
+          image_url: '/assets/subcategories/Glass Tumblrs 16oz.webp',
           description: 'placeholder, placeholder, placeholder',
           products: [
             {
@@ -111,7 +111,7 @@ const categoriesData = {
           id: 5,
           name: 'Smoothie Cups',
           url: '/categories/cups/smoothiecups',
-          image_url: '/assets/placeholder.png',
+          image_url: '/assets/subcategories/Smoothie Cups.avif',
           description: 'placeholder, placeholder, placeholder',
           products: [
             {
@@ -125,6 +125,32 @@ const categoriesData = {
             {
               id: 2,
               name: 'Placeholder 2',
+              stock: 0,
+              price: 10,
+              image_url: '/assets/placeholder.png',
+              description: 'placeholder, placeholder, placeholder',
+            },
+          ],
+        },
+      ],
+    },
+    {
+      id: 2,
+      name: 'UV DTF Wraps',
+      url: '/categories/UV DTF Wraps',
+      image_url: '/assets/categories/16oz UV DTF wrap TAY,ERASTOUR.jpg',
+      description: '',
+      subCategories: [
+        {
+          id: 1,
+          name: '16oz UV DTF wraps',
+          url: '/categories/UV DTF Wraps/wraps/',
+          image_url: '/assets/subcategories/16oz wraps.webp',
+          description: '',
+          products: [
+            {
+              id: 1,
+              name: 'Placeholder 1',
               stock: 0,
               price: 10,
               image_url: '/assets/placeholder.png',

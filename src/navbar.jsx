@@ -7,7 +7,7 @@ const NavBar = () => {
       <div className="flex items-center gap-4 text-sm font-medium">
         <Link to="/" className="flex items-center font-bold" prefetch={false}>
           <img
-            src="./assets/logos/wonderstruck-creationz-simple-small.png"
+            src="/assets/logos/wonderstruck-creationz-simple-small.png"
             alt="Wonderstruck Creationz Logo"
             width={48}
             height={48}

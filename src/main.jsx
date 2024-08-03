@@ -15,7 +15,7 @@ createRoot(document.getElementById('root')).render(
         <NavBar />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/:category" component={Category} />
+          <Route path="/categories/:category" component={Category} />
         </Routes>
       </div>
     </BrowserRouter>

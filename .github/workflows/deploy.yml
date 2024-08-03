@@ -1,0 +1,42 @@
+name: Deploy React App to Hostinger
+
+on:
+  push:
+    branches:
+      - main # Change this to your default branch
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '20' # Change this to your Node.js version
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build the project
+        run: npm run build
+
+      - name: Deploy to Hostinger via FTP
+        uses: SamKirkland/FTP-Deploy-Action@4.3.0
+        with:
+          ftp-server: ftp://wonderstruckcreationz.shop # Change this to your FTP server
+          ftp-username: ${{ secrets.FTP_USERNAME }}
+          ftp-password: ${{ secrets.FTP_PASSWORD }}
+          local-dir: build
+          server-dir: /public_html # Change this if your directory is different
+
+      - name: Create .htaccess for React Router
+        run: |
+          echo 'Options -MultiViews' > build/.htaccess
+          echo 'RewriteEngine On' >> build/.htaccess
+          echo 'RewriteCond %{REQUEST_FILENAME} !-f' >> build/.htaccess
+          echo 'RewriteCond %{REQUEST_FILENAME} !-d' >> build/.htaccess
+          echo 'RewriteRule ^ index.html [QSA,L]' >> build/.htaccess

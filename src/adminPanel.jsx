@@ -1,10 +1,9 @@
 import React from 'react';
-import { OurUploadButton } from './uploadButton';
 
 const AdminPanel = () => {
   return (
     <>
-      <OurUploadButton />
+      <h1>Admin Panel</h1>
     </>
   );
 };

@@ -5,6 +5,7 @@ import Home from './home';
 import NavBar from './navbar';
 import Category from './category';
 import SubCategory from './subCategory';
+import AdminPanel from './adminPanel';
 
 createRoot(document.getElementById('root')).render(
   <React.StrictMode>
@@ -18,6 +19,7 @@ createRoot(document.getElementById('root')).render(
             path="/categories/:category/:subCategory"
             element={<SubCategory />}
           />
+          <Route path="/admin" element={<AdminPanel />} />
         </Routes>
       </div>
     </BrowserRouter>

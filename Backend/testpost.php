@@ -15,8 +15,8 @@ if ($conn->query($sql) === TRUE) {
 }
 
 // Static data to insert
-$name = "Daniel Burbridge";
-$email = "Daniel.John.Burbridge@gmail.com";
+$name = "Stacey Clark-Hayes";
+$email = "staaaccceeeyyy@gmail.com";
 
 // Prepare and bind
 $stmt = $conn->prepare("INSERT INTO users (name, email) VALUES (?, ?)");

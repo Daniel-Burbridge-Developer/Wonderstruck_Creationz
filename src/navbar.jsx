@@ -1,5 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import {
+  SignedIn,
+  SignedOut,
+  SignInButton,
+  UserButton,
+} from '@clerk/clerk-react';
 
 const NavBar = () => {
   return (
@@ -46,13 +52,12 @@ const NavBar = () => {
           <ShoppingCartIcon className="h-5 w-5" />
           Cart
         </Link>
-        <Link
-          href="#"
-          className="text-muted-foreground hover:text-foreground"
-          prefetch={false}
-        >
-          Login
-        </Link>
+        <SignedOut>
+          <SignInButton />
+        </SignedOut>
+        <SignedIn>
+          <UserButton />
+        </SignedIn>
       </div>
     </header>
   );
